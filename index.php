@@ -12,7 +12,7 @@
 
             <?php the_excerpt(); ?>
 
-            <span>Post created by: <?php the_author(); ?> at <?php the_date(); ?></span>
+            <span>Post created by: <?php the_author(); ?> at <?php the_time('m/j/y g:i A'); ?></span>
             <div><?php the_category(); ?></div>
         <?php endwhile; ?>
     <?php endif; ?>
