@@ -21,7 +21,7 @@ function mbt_widgets_init() {
     register_sidebar([
         'name'          =>  'Footer Area',
         'id'            =>  'footer-widgets',
-        'before_widget'	=> '<aside id="%1$s" class="widget %2$s">',
+        'before_widget'	=> '<aside id="%1$s" class="col-md-3 widget %2$s">',
 		'after_widget'	=> '</aside>',
 		'before_title'	=> '<h1 class="widget-title">',
 		'after_title'	=> '</h1>', 
@@ -78,9 +78,9 @@ add_action('wp_enqueue_scripts', 'mbt_register_scripts_and_styles');
 
 function mbt_theme_setup() {
     // Add support for Featured Images
-
+    add_theme_support('post-thumbnails');
     // Set Image Size for blog thumbnail
-
+    set_post_thumbnail_size(100, 0, false);
     // Add support for custom logo
     add_theme_support('custom-logo', [
         'height'        =>  40,

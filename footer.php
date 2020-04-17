@@ -1,7 +1,7 @@
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <?php dynamic_sidebar('footer-widgets'); ?>
+          <?php get_sidebar('footer') ?>
         </div>
       </div>
     </footer>

@@ -13,6 +13,8 @@
                     <!-- this is a post  -->
                     <h2><a href="<? the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
+                    <?php the_post_thumbnail(); ?>
+                    
                     <?php the_excerpt(); ?>
 
                     <span>Post created by: <?php the_author(); ?> at <?php the_time('m/j/y g:i A'); ?></span>
@@ -22,7 +24,7 @@
         </div>
         <!-- end of posts  -->
 
-        <?php get_sidebar('primary-sidebar'); ?>
+        <?php get_sidebar('sidebar'); ?>
                     
     </div>
 </div>

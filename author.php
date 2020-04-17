@@ -2,19 +2,19 @@
     get_header();
 ?>
 <div class="container">
-    <h4 style="color: red;"><?php get_the_archive_title(); ?></h4>
+    <h1 style="color: red;"><? the_author(); ?>'s content</h1>
 
     <div class="row">
         <div class="col-md-9 content">
             <!-- Loop start	 -->
             <?php if ( have_posts() ) : ?>
                 <!-- Yay, we have posts  -->
-                <ul>
                 <?php while ( have_posts() ) : the_post(); ?>
                     <!-- this is a post  -->
-                    <li><h2><?php the_author(); ?></h2></li>
+                    <h2><a href="<? the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    
+                    <? the_excerpt();?>
                 <?php endwhile; ?>
-                </ul>
             <?php endif; ?>
         </div>  
         <!-- end of posts  -->
