@@ -67,7 +67,16 @@ function mbt_register_scripts_and_styles()  {
     wp_deregister_script('jquery');
 
     // Add jQuery
-    wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js', [], '3.5.0', true);
+    wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', [], '3.4.1', true);
+    
+    // Add popper.js
+    wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.3.3/umd/popper.min.js', ['jquery'], '2.3.3', true);
+
+    // Add bootstrap.js
+    wp_enqueue_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', ['jquery', 'popper'], '4.4.1', true);
+
+    // Add our own script.js
+    wp_enqueue_script('script', get_stylesheet_directory_uri() . '/assets/js/script.js', ['jquery']);
 }
 
 add_action('wp_enqueue_scripts', 'mbt_register_scripts_and_styles');
@@ -89,7 +98,7 @@ function mbt_theme_setup() {
         'flex-width'    => true,
         'header-text'   => ['site-title', 'site-description'],
     ]);
-    
+
     add_theme_support('custom-header', [
         'default-image'         =>  get_stylesheet_directory_uri() . '/assets/img/default-header-image.jpg',
         'default-text-color'    =>  '000',
@@ -98,6 +107,13 @@ function mbt_theme_setup() {
         'flex-width'            =>  true,
         'flex-height'           =>  true,      
     ]);
+
+    $header_images = [
+        'headphones'    =>  [
+            'url'   =>  get_stylesheet_directory_uri() . '/assets/img/default-header-image.jpg',
+        ],
+    ];
+    register_default_headers( $header_images );
 }
 
 add_action('after_setup_theme', 'mbt_theme_setup');
