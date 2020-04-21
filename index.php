@@ -3,23 +3,21 @@
 ?>
 <div class="container">
     <h4 style="color: red;">index.php</h4>
-    
+    <?php echo get_page_template(); ?>
     <div class="row">
         <div class="col-md-9 content">
             <!-- Loop start	 -->
             <?php if ( have_posts() ) : ?>
                 <!-- Yay, we have posts  -->
-                <?php while ( have_posts() ) : the_post(); ?>
-                    <!-- this is a post  -->
-                    <h2><a href="<? the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <div class="card-group">
+                    <div class="row">
+                        <?php while ( have_posts() ) : the_post(); ?>
 
-                    <?php the_post_thumbnail(); ?>
-                    
-                    <?php the_excerpt(); ?>
-
-                    <span>Post created by: <?php the_author(); ?> at <?php the_time('m/j/y g:i A'); ?></span>
-                    <div><?php the_category(); ?></div>
-                <?php endwhile; ?>
+                            <?php get_template_part('template-parts/content', 'excerpt'); ?>
+                            
+                        <?php endwhile; ?>
+                    </div> <!-- /.row -->
+                </div>  <!-- /.card-group -->
             <?php endif; ?>
         </div>
         <!-- end of posts  -->

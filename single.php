@@ -7,13 +7,10 @@
     <?php if ( have_posts() ) : ?>
         <!-- Yay, we have posts  -->
         <?php while ( have_posts() ) : the_post(); ?>
-            <!-- this is a post  -->
-            <h2><a href="<? the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-            <?php the_content(); ?>
-            
-            <span>Post created by: <?php the_author(); ?> at <?php the_date(); ?></span>
+            <?php get_template_part('template-parts/content', 'single') ?>
         <?php endwhile; ?>
+    <?php else: ?>
+        <?php get_template_part('template-parts/content', 'none') ?>
     <?php endif; ?>
     <!-- end of posts  -->
 </div>

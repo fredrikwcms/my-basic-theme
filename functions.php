@@ -89,6 +89,15 @@ function mbt_theme_setup() {
         'flex-width'    => true,
         'header-text'   => ['site-title', 'site-description'],
     ]);
+    
+    add_theme_support('custom-header', [
+        'default-image'         =>  get_stylesheet_directory_uri() . '/assets/img/default-header-image.jpg',
+        'default-text-color'    =>  '000',
+        'width'                 =>  2560,
+        'height'                =>  500,
+        'flex-width'            =>  true,
+        'flex-height'           =>  true,      
+    ]);
 }
 
 add_action('after_setup_theme', 'mbt_theme_setup');
@@ -113,3 +122,39 @@ function mbt_the_custom_logo() {
         bloginfo('name');
     }
 }
+
+/* 
+* Filter the_content()
+*/
+
+function mbt_filter_the_content($content)   {
+    $bad_words = file(get_stylesheet_directory() . '/inc/bad_words.txt', FILE_IGNORE_NEW_LINES);
+    $censored_words = [];
+
+    foreach($bad_words as $bad_word)    {
+        $len = strlen($bad_word);
+        $censored_word = str_repeat('*', $len);
+        array_push($censored_words, $censored_word);
+    }
+
+    return str_ireplace($bad_words, $censored_words, $content);
+}
+add_filter('the_content', 'mbt_filter_the_content', 10, 1);
+
+/* 
+* Restrict the_excerpt to 20 words
+*/
+
+function mbt_filter_excerpt_length($length) {
+    return 20;
+}
+add_filter('excerpt_length', 'mbt_filter_excerpt_length', 999, 1);
+
+/* 
+* Modify excerpt suffix.
+*/
+
+function mbt_filter_excerpt_more($more) {
+    return ' <div class="d-flex justify-content-end"><a href="' . get_permalink() . '" class="btn btn-primary">Läs mer &raquo;</a></div>';
+}
+add_filter('excerpt_more', 'mbt_filter_excerpt_more', 999, 1);
