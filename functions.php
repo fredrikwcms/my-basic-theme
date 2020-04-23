@@ -1,5 +1,8 @@
 <?php
 
+require("inc/bs4navwalker.php");
+require("inc/pagination.php");
+
 /*
 * Register Theme Widget Area
 *
@@ -33,8 +36,6 @@ add_action('widgets_init', 'mbt_widgets_init');
 /* 
 * Register our main menu
 */
-
-require('inc/bs4navwalker.php');
 
 function mbt_register_menus() {
     register_nav_menus([

@@ -18,8 +18,14 @@
                         <?php endwhile; ?>
                     </div> <!-- /.row -->
                 </div>  <!-- /.card-group -->
+
+                <!-- Pagination -->
+                <?php get_template_part('template-parts/posts-pagination'); ?>
+                <!-- /pagination -->
+            <?php else: ?>
+                <?php get_template_part('template-parts/content', 'none'); ?>
             <?php endif; ?>
-        </div>
+        </div> <!-- /.col-md-9 -->
         <!-- end of posts  -->
 
         <?php get_sidebar('sidebar'); ?>

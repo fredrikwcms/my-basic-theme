@@ -13,6 +13,6 @@
 
 <!-- Post Pagination -->
 
-<?php get_template_part('template-parts/post-navigation'); ?>
+<?php get_template_part('template-parts/post-pagination'); ?>
 
 <!-- /.Post Pagination -->

@@ -8,7 +8,7 @@
         <!-- Yay, we have posts  -->
         <?php while ( have_posts() ) : the_post(); ?>
             <?php get_template_part('template-parts/content', 'single') ?>
-            <?php get_template_part('template-parts/latest-posts') ?>
+            <?php get_template_part('template-parts/related-posts') ?>
         <?php endwhile; ?>
     <?php else: ?>
         <?php get_template_part('template-parts/content', 'none') ?>
