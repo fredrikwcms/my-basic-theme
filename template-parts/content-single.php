@@ -10,3 +10,9 @@
 
     <?php the_content(); ?>
 </article>
+
+<!-- Post Pagination -->
+
+<?php get_template_part('template-parts/post-navigation'); ?>
+
+<!-- /.Post Pagination -->
