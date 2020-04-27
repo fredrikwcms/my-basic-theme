@@ -9,7 +9,7 @@
 
     if ($latest_posts_query->have_posts())  {
         ?>
-            <h2>Latest posts</h2>
+            <h2><?php _e('Latest posts', 'my-basic-theme'); ?></h2>
 
             <div class="card-group">
                 <div class="row">

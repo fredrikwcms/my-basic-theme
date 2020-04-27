@@ -10,6 +10,6 @@
 
     <?php the_excerpt(); ?>
 
-    <span>Post created by: <?php the_author(); ?> at <?php the_time('m/j/y g:i A'); ?></span>
+    <span><?php _e('Post created by: ', 'my-basic-theme'); ?> <?php the_author(); ?> <?php _e('at', 'my-basic-theme'); ?> <?php the_time('m/j/y g:i A'); ?></span>
     <div><?php the_category(); ?></div>
 </div>  

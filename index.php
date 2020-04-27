@@ -2,7 +2,6 @@
     get_header();
 ?>
 <div class="container">
-    <h4 style="color: red;">index.php</h4>
     <?php echo get_page_template(); ?>
     <div class="row">
         <div class="col-md-9 content">

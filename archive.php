@@ -2,7 +2,7 @@
     get_header();
 ?>
 <div class="container">
-    <h2>Archive</h2>
+    <h2><?php _e('Archive', 'my-basic-theme'); ?></h2>
 
     <div class="row">
         <div class="col-md-9 content">
