@@ -2,6 +2,8 @@
 
 require("inc/bs4navwalker.php");
 require("inc/pagination.php");
+require("inc/cpt.php");
+require("inc/ct.php");
 
 /*
 * Register Theme Widget Area
@@ -115,6 +117,8 @@ function mbt_theme_setup() {
         ],
     ];
     register_default_headers( $header_images );
+
+    load_theme_textdomain('my-basic-theme', get_template_directory() . '/languages');
 }
 
 add_action('after_setup_theme', 'mbt_theme_setup');
@@ -175,16 +179,3 @@ function mbt_filter_excerpt_more($more) {
     return ' <div class="d-flex justify-content-end"><a href="' . get_permalink() . '" class="btn btn-primary">Läs mer &raquo;</a></div>';
 }
 add_filter('excerpt_more', 'mbt_filter_excerpt_more', 999, 1);
-
-/* 
-*   Modify all get post queries
-*/
-
-function mbt_exclude_faq_posts($query)  {
-    if($query->is_home())    {
-        $faq_category = get_category_by_slug('faq');
-        $faq_category_id = $faq_category->term_id;
-        $query->set('cat', '-' . $faq_category_id);
-    };
-}
-add_action('pre_get_posts', 'mbt_exclude_faq_posts');

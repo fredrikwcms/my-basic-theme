@@ -2,7 +2,8 @@
     get_header();
 ?>
 <div class="container">
-    <?php echo get_page_template(); ?>
+
+    <?php _e('Index.php', 'my-basic-theme'); ?>
     <div class="row">
         <div class="col-md-9 content">
             <!-- Loop start	 -->

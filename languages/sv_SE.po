@@ -1,0 +1,381 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Blank WordPress Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2020-04-29 13:19+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Your Team <translations@example.com>\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:9
+msgid "This is not the page you're looking for!"
+msgstr "Detta är inte sidan du letade efter!"
+
+#: archive-my_faq.php:8
+msgid "Frequently Asked Questions"
+msgstr "Riktigt Tjatiga Frågor"
+
+#: archive.php:5
+msgid "Archive"
+msgstr "Arkiv"
+
+#: inc/cpt.php:10 inc/cpt.php:45
+msgid "FAQ's"
+msgstr "Tjatiga frågor"
+
+#: inc/cpt.php:11 inc/cpt.php:35
+msgid "FAQ"
+msgstr "Tjatig Fråga"
+
+#: inc/cpt.php:12
+msgid "My FAQ's"
+msgstr ""
+
+#: inc/cpt.php:13
+msgid "All FAQ's"
+msgstr ""
+
+#: inc/cpt.php:14 inc/cpt.php:79
+msgid "Add new"
+msgstr ""
+
+#: inc/cpt.php:15
+msgid "Add new FAQ"
+msgstr ""
+
+#: inc/cpt.php:16
+msgid "Edit FAQ"
+msgstr ""
+
+#: inc/cpt.php:17
+msgid "New FAQ"
+msgstr ""
+
+#: inc/cpt.php:18
+msgid "View FAQ"
+msgstr ""
+
+#: inc/cpt.php:19
+msgid "View FAQ's"
+msgstr ""
+
+#: inc/cpt.php:20
+msgid "Search FAQ's"
+msgstr ""
+
+#: inc/cpt.php:21
+msgid "No FAQ's found"
+msgstr ""
+
+#: inc/cpt.php:22
+msgid "No FAQ's found in trash"
+msgstr ""
+
+#: inc/cpt.php:23 inc/cpt.php:41
+msgid "Parent FAQ:"
+msgstr ""
+
+#: inc/cpt.php:24
+msgid "Featured image for this FAQ"
+msgstr ""
+
+#: inc/cpt.php:25
+msgid "Set featured image for this FAQ"
+msgstr ""
+
+#: inc/cpt.php:26
+msgid "Remove featured image for this FAQ"
+msgstr ""
+
+#: inc/cpt.php:27
+msgid "Use as featured image for this FAQ"
+msgstr ""
+
+#: inc/cpt.php:28
+msgid "FAQ archives"
+msgstr ""
+
+#: inc/cpt.php:29
+msgid "Insert into FAQ"
+msgstr ""
+
+#: inc/cpt.php:30
+msgid "Upload to this FAQ"
+msgstr ""
+
+#: inc/cpt.php:31
+msgid "Filter FAQ's list"
+msgstr ""
+
+#: inc/cpt.php:32
+msgid "FAQ's list navigation"
+msgstr ""
+
+#: inc/cpt.php:33
+msgid "FAQ's list"
+msgstr ""
+
+#: inc/cpt.php:34
+msgid "FAQ's attributes"
+msgstr ""
+
+#: inc/cpt.php:36
+msgid "FAQ published"
+msgstr ""
+
+#: inc/cpt.php:37
+msgid "FAQ published privately."
+msgstr ""
+
+#: inc/cpt.php:38
+msgid "FAQ reverted to draft."
+msgstr ""
+
+#: inc/cpt.php:39
+msgid "FAQ scheduled"
+msgstr ""
+
+#: inc/cpt.php:40
+msgid "FAQ updated."
+msgstr ""
+
+#: inc/cpt.php:75 inc/cpt.php:110
+msgid "Games"
+msgstr "Spel"
+
+#: inc/cpt.php:76 inc/cpt.php:100
+msgid "Game"
+msgstr "Spel"
+
+#: inc/cpt.php:77
+msgid "My Games"
+msgstr "Mina Spel"
+
+#: inc/cpt.php:78
+msgid "All Games"
+msgstr "Alla Spel"
+
+#: inc/cpt.php:80
+msgid "Add new Game"
+msgstr ""
+
+#: inc/cpt.php:81
+msgid "Edit Game"
+msgstr ""
+
+#: inc/cpt.php:82
+msgid "New Game"
+msgstr ""
+
+#: inc/cpt.php:83
+msgid "View Game"
+msgstr ""
+
+#: inc/cpt.php:84
+msgid "View Games"
+msgstr ""
+
+#: inc/cpt.php:85
+msgid "Search Games"
+msgstr ""
+
+#: inc/cpt.php:86
+msgid "No Games found"
+msgstr ""
+
+#: inc/cpt.php:87
+msgid "No Games found in trash"
+msgstr ""
+
+#: inc/cpt.php:88 inc/cpt.php:106
+msgid "Parent Game:"
+msgstr ""
+
+#: inc/cpt.php:89
+msgid "Featured image for this Game"
+msgstr ""
+
+#: inc/cpt.php:90
+msgid "Set featured image for this Game"
+msgstr ""
+
+#: inc/cpt.php:91
+msgid "Remove featured image for this Game"
+msgstr ""
+
+#: inc/cpt.php:92
+msgid "Use as featured image for this Game"
+msgstr ""
+
+#: inc/cpt.php:93
+msgid "Game archives"
+msgstr ""
+
+#: inc/cpt.php:94
+msgid "Insert into Game"
+msgstr ""
+
+#: inc/cpt.php:95
+msgid "Upload to this Game"
+msgstr ""
+
+#: inc/cpt.php:96
+msgid "Filter Games list"
+msgstr ""
+
+#: inc/cpt.php:97
+msgid "Games list navigation"
+msgstr ""
+
+#: inc/cpt.php:98
+msgid "Games list"
+msgstr ""
+
+#: inc/cpt.php:99
+msgid "Games attributes"
+msgstr ""
+
+#: inc/cpt.php:101
+msgid "Game published"
+msgstr ""
+
+#: inc/cpt.php:102
+msgid "Game published privately."
+msgstr ""
+
+#: inc/cpt.php:103
+msgid "Game reverted to draft."
+msgstr ""
+
+#: inc/cpt.php:104
+msgid "Game scheduled"
+msgstr ""
+
+#: inc/cpt.php:105
+msgid "Game updated."
+msgstr ""
+
+#: inc/ct.php:10 inc/ct.php:12 inc/ct.php:33
+msgid "Game Genres"
+msgstr ""
+
+#: inc/ct.php:11
+msgid "Game Genre"
+msgstr ""
+
+#: inc/ct.php:13
+msgid "All Game Genres"
+msgstr ""
+
+#: inc/ct.php:14
+msgid "Edit Game Genre"
+msgstr ""
+
+#: inc/ct.php:15
+msgid "View Game Genre"
+msgstr ""
+
+#: inc/ct.php:16
+msgid "Update Game Genre name"
+msgstr ""
+
+#: inc/ct.php:17
+msgid "Add new Game Genre"
+msgstr ""
+
+#: inc/ct.php:18
+msgid "New Game Genre name"
+msgstr ""
+
+#: inc/ct.php:19
+msgid "Parent Game Genre"
+msgstr ""
+
+#: inc/ct.php:20
+msgid "Parent Game Genre:"
+msgstr ""
+
+#: inc/ct.php:21
+msgid "Search Game Genres"
+msgstr ""
+
+#: inc/ct.php:22
+msgid "Popular Game Genres"
+msgstr ""
+
+#: inc/ct.php:23
+msgid "Separate Game Genres with commas"
+msgstr ""
+
+#: inc/ct.php:24
+msgid "Add or remove Game Genres"
+msgstr ""
+
+#: inc/ct.php:25
+msgid "Choose from the most used Game Genres"
+msgstr ""
+
+#: inc/ct.php:26
+msgid "No Game Genres found"
+msgstr ""
+
+#: inc/ct.php:27
+msgid "No Game Genres"
+msgstr ""
+
+#: inc/ct.php:28
+msgid "Game Genres list navigation"
+msgstr ""
+
+#: inc/ct.php:29
+msgid "Game Genres list"
+msgstr ""
+
+#: inc/pagination.php:39
+msgid "« Prev"
+msgstr ""
+
+#: inc/pagination.php:40
+msgid "Next »"
+msgstr ""
+
+#: index.php:6
+msgid "Index.php"
+msgstr ""
+
+#: template-parts/content-archive.php:13
+msgid "Post created by: "
+msgstr ""
+
+#: template-parts/content-archive.php:13
+msgid "at"
+msgstr ""
+
+#: template-parts/content-none.php:3
+msgid "Sorry, no posts found!"
+msgstr ""
+
+#: template-parts/latest-posts.php:12
+msgid "Latest posts"
+msgstr ""
+
+#: template-parts/related-posts.php:14
+msgid "Related posts"
+msgstr ""
